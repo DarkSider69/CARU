@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" type="image/x-icon" href="/img/Logo (1).svg">
+    <title>Домашняя страница - Caru.Web</title>
+</head>
+<body>
+    <!-- open/close login-modal function -->
+    <div class="login-modal hidden">
+        <!-- <ion-icon class="close-X" name="close-outline"></ion-icon> -->
+        <span class="close-X">×</span>
+        <div class="login-box">
+            <h5>Войти в профиль</h5>
+            <span class="black-line d-inline"></span>
+            <div class="form-container">
+                <!-- phone number  -->
+                <p class="pnumber--label">телефон:</p>
+                <div class="input--number">
+                    <div class="flag-container d-inline">
+                        <img class="geo-flag" src="img/ge.svg" alt="GE">
+                        <p class="default-dial-code">+995</p>
+                    </div>
+                    <!-- choose dial code container  -->
+                    <div class="flag-container-dropdown hidden">
+                        <div class="fc-container geo">
+                            <img class="geo-flag" src="img/ge.svg" alt="GE">
+                            <p>Грузия (Georgia) +995</p>
+                        </div>
+                        <div class="fc-container ukr">
+                            <img class="geo-flag" src="img/ua.svg" alt="GE">
+                            <p>Украина (Ukraine) +380</p>
+                        </div>
+                    </div>
+                    <input class="tel" required="" maxlength="9" type="text" placeholder="телефон">
+                </div>
+                <!-- password  -->
+                <p class="put-9-sym"></p>
+                <p class="pnumber--label">пароль:</p>
+                <div class="password">
+                    <input class="pass-dif-set" required="" maxlength="10" type="password" placeholder="пароль">
+                </div>
+                <a class="forg-password" href="#">Забыли пароль?</a>
+                <button type="button" class="form-submit">Войти в профиль</button>
+            </div>
+        </div>
+    </div>
+    <!-- end  -->
+    <header>
+        <div class="caru-header">
+            <div class="navbar-main d-inline">
+                <a href="#"><img class="nav-logo" src="img/Logo (1).svg" alt="caru-logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="#">как работает?</a></li>
+                        <li><a href="#">почему Caru?</a></li>
+                        <li><a href="#">Ассистенты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="navbar-settings d-inline">
+                <div class="change-language d-inline">
+                    <p onmousedown="return false" onselectstart="return false" class="lang-value">RUS</p>
+                    <ion-icon class="down-arrow" name="caret-down-outline"></ion-icon>
+                </div>
+                <div class="language-dropdown hidden">
+                    <ul>
+                        <li><a href="#" class="dropdown-geo dropdown--lang">ENG</a></li>
+                        <li><a onClick="parent.location='index.html'" href="#" class="dropdown-rus dropdown--lang">GEO</a></li>
+                        <li><a href="#" class="dropdown-ukr dropdown--lang">UKR</a></li>
+                    </ul>
+                </div>
+                <div class="log-in d-inline">
+                    <ion-icon class="login-ic" name="log-in-outline"></ion-icon>
+                    <p onmousedown="return false" onselectstart="return false" class="login-value">авторизоваться</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="first-section">
+        <div class="first-section-content">
+            <div class="text-con">
+                <h3 class="tc-main-title">Я беру, делаю, возвращаю тебе</h3>
+                <p class="tc-second-title">Не тратьте свое время. Не теряй самообладания. Не переплачивайте</p>
+                <!-- rating div  -->
+                <div class="caru-rating">
+                    <div class="fixed-car">
+                        <img src="img/users (1).svg" alt="user-ic">
+                        <p class="users-amount d-inline">+50.000</p>
+                        <p class="fixed-car-title">Отремонтированный автомобиль</p>
+                    </div>
+                    <div class="fixed-car fb-rating">
+                        <img src="img/star.svg" alt="star-ic">
+                        <p class="users-amount d-inline">4.9/5</p>
+                        <p class="fixed-car-title">FB рейтинг</p>
+                    </div>
+                </div>
+                <div class="auto-assistant">
+                    <button class="auto-assist-btn call-assistant-btn" type="button">Вызов автопомощника</button>
+                    <button class="auto-assist-btn self-service-btn" type="button">я сам возьму</button>
+                </div>
+            </div>
+            <div class="image-con">
+                <!-- main image  -->
+                <img class="biglu" src="img/biglu.png" alt="bglu-img">
+                <!-- background image  -->
+                <img class="biglu-background" src="img/blue-background.png" alt="background">
+            </div>
+        </div>
+    </section>   
+    <script src="script.js"></script>
+</body>
+</html>
